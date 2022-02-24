@@ -1,0 +1,80 @@
+@import '../../global/styles.scss';
+
+.Info {
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+
+  background-color: var(--background);
+
+  .titleEffect {
+    color: var(--title-color);
+    font-family: var(--font);
+    font-weight: 500;
+    margin-bottom: 0.625rem;
+    font-size: 1.875rem;
+
+    width: 9ch;
+    animation: typing 0.7s steps(5, end), blink-caret 0.75s step-end infinite;
+
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid var(--title-color);
+  }
+
+  .paragraph {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-family: var(--font);
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.3125rem;
+    justify-content: center;
+
+    .icon {
+      width: 2.5rem;
+      height: 1.875rem;
+      transition: 0.2s;
+      margin-top: 2rem;
+    }
+
+    .icon:hover {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--title-color);
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .titleEffect {
+      font-size: 1rem;
+    }
+
+    .icons {
+      flex-wrap: wrap;
+    }
+
+    .paragraph {
+      font-size: 0.875rem;
+    }
+  }
+}

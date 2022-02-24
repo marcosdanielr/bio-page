@@ -1,0 +1,39 @@
+@import '../../global/styles.scss';
+
+.aboutProjectContainer {
+  text-align: center;
+
+  .aboutprojectTitle {
+    color: var(--title-color);
+    font-family: var(--font);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .aboutImage {
+    margin-bottom: 1rem;
+  }
+
+  .productPageAbout {
+    color: var(--text-color);
+    font-family: var(--font);
+    font-weight: 300;
+  }
+
+  iframe {
+    width: 35rem;
+    height: 19.6875rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 1050px) {
+    .aboutImage {
+      width: 65%;
+    }
+    iframe {
+      width: 17.5rem;
+      height: 9.84375rem;
+      margin-left: -1.25rem;
+    }
+  }
+}

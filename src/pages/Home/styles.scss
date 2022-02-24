@@ -1,0 +1,36 @@
+@import '../../global/styles.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+
+  .header {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .body {
+    gap: 3.125rem;
+    max-width: 50vw;
+    max-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    .about {
+      margin-top: 20px;
+      margin-left: 20px;
+
+      footer {
+        align-items: flex-end;
+      }
+    }
+  }
+}

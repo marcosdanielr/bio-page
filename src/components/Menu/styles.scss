@@ -1,0 +1,50 @@
+@import '../../global/styles.scss';
+
+.menu {
+  background-color: var(--background);
+
+  min-height: 3.125rem;
+  height: auto;
+  width: auto;
+  max-width: 34.375rem;
+
+  display: flex;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--menu-border);
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0.625rem auto 1.5rem auto;
+
+  ul li a {
+    transition: color 0.2s;
+  }
+
+  ul li a:hover {
+    color: var(--title-color);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: var(--font);
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .menu {
+    min-width: 31.25rem;
+  }
+}

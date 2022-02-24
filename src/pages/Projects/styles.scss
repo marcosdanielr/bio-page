@@ -1,0 +1,24 @@
+@import '../../global/styles.scss';
+
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+
+  .body {
+    gap: 3.125rem;
+    max-width: 50vw;
+    max-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    .myProjects {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      width: 100%;
+      margin-top: -300px;
+    }
+  }
+}

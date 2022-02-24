@@ -1,0 +1,18 @@
+.avatar {
+  margin-top: 3rem;
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+}
+
+@media (max-width: 1050px) {
+  .avatarDiv {
+    margin-left: 3.125rem;
+
+    .avatar {
+      width: 8rem;
+      height: 8rem;
+      align-items: center;
+    }
+  }
+}
